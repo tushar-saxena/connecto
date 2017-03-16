@@ -39,12 +39,13 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-neo4j')
     compile('org.springframework.boot:spring-boot-starter-data-rest')
 
-//	compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-web')
 //	compile('org.springframework.boot:spring-boot-starter-web-services')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
 
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("org.springframework.boot:spring-boot-starter-security")
     compile("org.hibernate:hibernate-core:4.3.6.Final")
     compile("org.hibernate:hibernate-entitymanager:4.3.8.Final")
     compile("org.hibernate:hibernate-validator:5.1.2.Final")
@@ -55,6 +56,9 @@ dependencies {
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     providedRuntime('org.apache.tomcat.embed:tomcat-embed-jasper')
     compile("org.springframework.boot:spring-boot-devtools")
+// for jstl in jsp files
+    //compile("javax.servlet:javax.servlet-api:3.1.0")
+    compile("javax.servlet:jstl:1.1.2")
 }
 
 

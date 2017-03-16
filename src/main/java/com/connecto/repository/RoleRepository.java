@@ -1,11 +1,10 @@
 package com.connecto.repository;
 
-import com.connecto.domain.User;
+import com.connecto.domain.Role;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface UserRepository extends CrudRepository<User, Long> {
-    User findByEmailId(String emailId);
+public interface RoleRepository extends CrudRepository<Role, Long> {
 }
